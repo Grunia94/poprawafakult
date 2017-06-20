@@ -9,7 +9,7 @@ GraOB
 
 
 2. Utworzyc enum:
-EGatunek: STEAM, ORIGIN, INNA
+EDystrybucja: STEAM, ORIGIN, INNA
 
 
 3. Utworzyc pelny CRUD:
