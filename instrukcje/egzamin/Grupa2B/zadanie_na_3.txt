@@ -3,13 +3,13 @@ KsiazkaOB
     Long id;
     Date dataUtworzenia; // (wypelniane new Date() przy tworzeniu nowego rekordu)
     String tytul;
-    EGatunek gatunek;
+    EWydawnictwo wydawnictwo;
     String autor;
-    Integer liczbaStron;
+    Double cena;
 
 
 2. Utworzyc enum:
-EGatunek: FANTASY, HORROR, BIOGRAFICZNA
+EWydawnictwo: MAG, ZYSK_I_SKA, SUPERNOWA
 
 
 3. Utworzyc pelny CRUD:
@@ -34,43 +34,43 @@ out: KsiazkaDTO
 KsiazkaDTO
     Long id;
     String tytul;
-    EGatunek gatunek;
+    EWydawnictwo wydawnictwo;
     String autor;
-    Integer liczbaStron;
+    Double cena;
 
 
 5. Dane do zapelnienia bazy (w zadaniu na 5 dane sa inne):
 {
-"tytul":"Imajica: Piπte Dominium",
-"gatunek":"HORROR",
+"tytul":"Imajica Piate Dominium",
+"wydawnictwo":"MAG",
 "autor":"Clive Barker",
-"liczbaStron":504
+"cena":35
 }
 
 {
 "tytul":"Gra o Tron",
-"gatunek":"FANTASY",
+"wydawnictwo":"ZYSK_I_SKA",
 "autor":"Gorge R.R. Martin",
-"liczbaStron":774
+"cena":69
 }
 
 {
-"tytul":"Wiedümin: Sezon Burz",
-"gatunek":"FANTASY",
+"tytul":"Wiedzmin Sezon Burz",
+"wydawnictwo":"SUPERNOWA",
 "autor":"Andrzej Sapkowski",
-"liczbaStron":404
+"cena":45
 }
 
 {
-"tytul":"Wiedümin: Miecz Przeznaczenia",
-"gatunek":"FANTASY",
+"tytul":"Wiedzmin Miecz Przeznaczenia",
+"wydawnictwo":"SUPERNOWA",
 "autor":"Andrzej Sapkowski",
-"liczbaStron":342
+"cena":30
 }
 
 {
-"tytul":"Wiedümin: Ostatnie Øyczenie",
-"gatunek":"FANTASY",
+"tytul":"Wiedzmin Ostatnie zyczenie",
+"wydawnictwo":"SUPERNOWA",
 "autor":"Andrzej Sapkowski",
-"liczbaStron":286
+"cena":30
 }

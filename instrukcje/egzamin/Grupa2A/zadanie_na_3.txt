@@ -3,13 +3,13 @@ GraOB
     Long id;
     Date dataUtworzenia; // (wypelniane new Date() przy tworzeniu nowego rekordu)
     String tytul;
-    EDystrybucja dystrybucja;
+    EGatunek gatunek;
     String developer;
-    String wydawca;
+    Integer rokWydania;
 
 
 2. Utworzyc enum:
-EDystrybucja: STEAM, ORIGIN, INNA
+EGatunek: SANDBOX, FPS, BIJATYKA
 
 
 3. Utworzyc pelny CRUD:
@@ -34,43 +34,43 @@ out: GraDTO
 GraDTO
     Long id;
     String tytul;
-    EDystrybucja dystrybucja;
+    EGatunek gatunek;
     String developer;
-    String wydawca;
+    Integer rokWydania;
 
 
 5. Dane do zapelnienia bazy (w zadaniu na 5 dane sa inne):
 {
 "tytul":"Minecraft",
-"dystrybucja":"INNA",
+"gatunek":"SANDBOX",
 "developer":"Mojang",
-"wydawca":"Mojang"
+"rokWydania":2011
 }
 
 {
 "tytul":"Tekken 3",
-"dystrybucja":"INNA",
+"gatunek":"BIJATYKA",
 "developer":"Namco",
-"wydawca":"Namco"
+"rokWydania":1998
 }
 
 {
 "tytul":"Unreal Tournament 3",
-"dystrybucja":"STEAM",
+"gatunek":"FPS",
 "developer":"Epic Games",
-"wydawca":"Midway Games"
+"rokWydania":2007
 }
 
 {
 "tytul":"Quake 3 Arena",
-"dystrybucja":"STEAM",
+"gatunek":"FPS",
 "developer":"id Software",
-"wydawca":"Activision"
+"rokWydania":1999
 }
 
 {
 "tytul":"Battlefield 3",
-"dystrybucja":"ORIGIN",
+"gatunek":"FPS",
 "developer":"EA DICE",
-"wydawca":"Electronic Arts"
+"rokWydania":2011
 }
